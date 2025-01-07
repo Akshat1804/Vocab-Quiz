@@ -37,7 +37,7 @@ const Login = () => {
 
   return (
  
-    <div className="w-screen h-screen flex flex-col items-center relative">
+    <div className="w-screen h-screen flex flex-col items-center ">
 
       <form
         onSubmit={submithandler}
