@@ -132,6 +132,7 @@ body.dark {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.8); 
 }
 
