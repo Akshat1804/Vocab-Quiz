@@ -107,7 +107,18 @@ const Quiz = () => {
         <div id='result' className="md:w-full w-[90%] top-[30%] md:top-[20%] absolute max-w-4xl p-6 rounded-lg shadow-md ">
           <h2 className="text-2xl font-semibold text-green-700  mb-4">Quiz Completed!</h2>
           <p className="text-lg  mb-4">Your score: {score} / {questions.length}</p>
-          <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-md" onClick={() => window.location.reload()}>Try Again</button>
+          <button
+            className="bg-blue-500 text-white font-bold py-2 px-4 rounded-md"
+            onClick={() => {
+              setQuestions(generateQuestions()); 
+              setCurrentQuestionIndex(0); 
+              setSelectedAnswer(null); 
+              setScore(0); 
+              setQuizFinished(false); 
+            }}
+          >
+            Try Again
+          </button>
         </div>
       )}
     </div>
